@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Layout</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <!-- Content Area -->
+        <main role="main" class="ml-sm-auto col-12">
+          <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+          >
+            <h1 class="h2">Assignment For module 10</h1>
+          </div>
+
+          <!-- Accordion Section -->
+          <div class="accordion" id="accordionExample">
+            <!-- Question 1 -->
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    #1. Write a function named ‘calculateSum’ that takes two
+                    arguments and returns their sum.
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <!-- Calculate Sum Form -->
+                  <form id="calculateSumForm">
+                    <div class="form-group">
+                      <label for="num1">Number 1:</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="num1"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="num2">Number 2:</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="num2"
+                        required
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      id="calculateSumBtn"
+                    >
+                      Calculate Sum
+                    </button>
+                  </form>
+                  <p class="mt-3">Sum: <span id="sumResult"></span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    #2. Write a function named ‘isEven’ that takes one argument
+                    and returns true if the number is even, and false otherwise.
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <!-- Is Even Form -->
+                  <form id="isEvenForm">
+                    <div class="form-group">
+                      <label for="num">Number:</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="evenNumber"
+                        required
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      id="checkEvenBtn"
+                    >
+                      Check Even
+                    </button>
+                  </form>
+                  <p class="mt-3">Result: <span id="isEvenResult"></span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    #3. Write a function named ‘findMax’ that takes an array of
+                    numbers and returns the largest number in the array.
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <!-- Find Max Form -->
+                  <form id="findMaxForm">
+                    <div class="form-group">
+                      <label for="numArray"
+                        >Number Array (comma separated):</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="numArray"
+                        required
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      id="findMaxBtn"
+                    >
+                      Find Max
+                    </button>
+                  </form>
+                  <p class="mt-3">Max: <span id="maxResult"></span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    #4. Write a function named ‘reverseString’ that takes a
+                    string and returns the string reversed.
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseFour"
+                class="collapse"
+                aria-labelledby="headingFour"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <!-- Reverse String Form -->
+                  <form id="reverseStringForm">
+                    <div class="form-group">
+                      <label for="inputString">String:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputString"
+                        required
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      id="reserveStringBtn"
+                    >
+                      Reverse String
+                    </button>
+                  </form>
+                  <p class="mt-3">Reversed: <span id="reverseResult"></span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    #5. Write a function named ‘filterOddNumbers’ that takes an
+                    array of numbers and returns a new array containing only the
+                    odd numbers.
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseFive"
+                class="collapse"
+                aria-labelledby="headingFive"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <!-- Filter Odd Numbers Form -->
+                  <form id="filterOddNumbersForm">
+                    <div class="form-group">
+                      <label for="oddNumArray"
+                        >Number Array (comma separated):</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="oddNumArray"
+                        required
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      id="filterOddNumberBtn"
+                    >
+                      Filter Odd Numbers
+                    </button>
+                  </form>
+                  <p class="mt-3">
+                    Odd Numbers: <span id="oddNumbersResult"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="card">
+              <div class="card-header" id="headingSix">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    #6. Write a function named ‘sumArray’ that takes an array of
+                    numbers and returns the sum of all elements.
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseSix"
+                class="collapse"
+                aria-labelledby="headingSix"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <!-- Sum Array Form -->
+                  <form id="sumArrayForm">
+                    <div class="form-group">
+                      <label for="sumArray"
+                        >Number Array (comma separated):</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="sumArray"
+                        required
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      id="arraySumBtn"
+                    >
+                      Sum Array
+                    </button>
+                  </form>
+                  <p class="mt-3">Sum: <span id="sumArrayResult"></span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="card">
+              <div class="card-header" id="headingSeven">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="collapseSeven"
+                  >
+                    #7. Write a function named ‘sortArray’ that takes an array
+                    of numbers and returns a new array sorted in ascending
+                    order.
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseSeven"
+                class="collapse"
+                aria-labelledby="headingSeven"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <!-- Sort Array Form -->
+                  <form id="sortArrayForm">
+                    <div class="form-group">
+                      <label for="sortArray"
+                        >Number Array (comma separated):</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="sortArray"
+                        required
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      id="sortArrayBtn"
+                    >
+                      Sort Array
+                    </button>
+                  </form>
+                  <p class="mt-3">
+                    Sorted Array: <span id="sortArrayResult"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="card">
+              <div class="card-header" id="headingEight">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseEight"
+                    aria-expanded="false"
+                    aria-controls="collapseEight"
+                  >
+                    #8. Write a function named ‘capitalizeFirstLetter’ that
+                    takes a string and returns the same string with the first
+                    letter capitalized.
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseEight"
+                class="collapse"
+                aria-labelledby="headingEight"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <!-- Capitalize First Letter Form -->
+                  <form id="capitalizeFirstLetterForm">
+                    <div class="form-group">
+                      <label for="capitalizeString">String:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="capitalizeString"
+                        required
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      id="capitalizeStringBtn"
+                    >
+                      Capitalize
+                    </button>
+                  </form>
+                  <p class="mt-3">
+                    Capitalized: <span id="capitalizeResult"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+      <div class="container text-center">
+        <a href="https://github.com/Shahriar-Shakil" target="_blank" class=""
+          >Shahriar Kabir</a
+        >
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
